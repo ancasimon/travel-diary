@@ -1,104 +1,104 @@
 {
-  "travelCard1": {
-    "title": "Yellowstone",
+  "destination1": {
+    "locationName": "Yellowstone",
     "image": "https://travel.usnews.com/dims4/USNEWS/a66c686/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/7/yellowstone_main-edited-16_445x280.jpg",
     "alt": "Yellowstone National Park",
     "description": "Even if Yellowstone didn't hold the incredible distinction of being the world's first national park, the 2.2 million-acre park could easily stand on its own for its unique natural attractions and diverse geography. Here, travelers can get lost in the splendor of Yellowstone's many lakes, mountains, buffalo-filled valleys and, of course, its unmatched geysers and hot springs.", 
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard2": {
-    "title": "Yosemite",
+  "destination2": {
+    "locationName": "Yosemite",
     "image": "https://travel.usnews.com/dims4/USNEWS/ac73016/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/94/gettyimages-599456588_445x280.jpg",
     "alt": "Yosemite National Park",
     "description": "California's most-visited national park stands out for its bevy of impressive waterfalls, such as Vernal Fall and Bridalveil Fall, as well as unique granite rock formations like the Half Dome and El Capitan.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard3": {
-    "title": "Glacier National Park",
+  "destination3": {
+    "locationName": "Glacier National Park",
     "image": "https://travel.usnews.com/dims4/USNEWS/f2b65fd/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/393/main_getty_resized_445x280.jpg",
     "alt": "Beautiful glacial lake in Glacier National Park",
     "description": "Water and mountains define this national park, which spans three mountain ranges and includes more than 700 lakes across Montana. Take advantage of the park's expansive hiking trails, and be sure to hit traveler favorites like the Trail of the Cedars and Iceberg Lake Trail. Other scenic spots to explore include the Apgar Nature Center and the Waterton-Glacier International Peace Park, a UNESCO World Heritage Site.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard4": {
-    "title": "Grand Canyon",
+  "destination4": {
+    "locationName": "Grand Canyon",
     "image": "https://travel.usnews.com/dims4/USNEWS/e421904/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/16/grand_canyon_main_2014_-_shutterstock-kojihirano_445x280.jpg",
     "alt": "View of the Colorado River in the Grand Canyon",
     "description": "The Grand Canyon is so magnificent that even the highest quality photos don't do the park's beauty justice – you have to see it in person. The 18-by-277-mile UNESCO World Heritage Site offers endless hiking opportunities, as well as the chance to raft the Colorado River. The turquoise waters of Havasu Falls are also a must-see attraction.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard5": {
-    "title": "Grand Teton National Park",
+  "destination5": {
+    "locationName": "Grand Teton National Park",
     "image": "https://travel.usnews.com/dims4/USNEWS/c261c58/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/446/sunset_getty_resized_445x280.jpg",
     "alt": "Sunset view in the Grand Tetons",
     "description": "Jackson Hole's backcountry is a wild wonderland begging to be explored. Once home to ranchers, farmers and fur trappers, the park now offers more than 200 miles of trails that weave through prairies, lakes and the park's most remarkable attribute, the jagged, snow-capped peaks of the Grand Teton mountain range. The Cascade Canyon Trail shows off the best of the park's stunning topography.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard6": {
-    "title": "Hawaii Volcanoes National Park",
+  "destination6": {
+    "locationName": "Hawaii Volcanoes National Park",
     "image": "https://travel.usnews.com/dims4/USNEWS/0d5d066/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/447/gettyimages-158412067_445x280.jpg",
     "alt": "Hot lava at an active volcano in Hawaii",
     "description": "Visit this park for a chance to get up close and personal with two of the world's most active volcanoes, Mauna Loa and Kilauea. The latter continually erupts, which visitors can witness from multiple points in the park, including the famous Chain of Craters Road. Along the drive, set aside time to stop at the Kealakomo Overlook. The scenic lookout offers expansive views of the Pacific Ocean and the ancient village of Kealakomo.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard7": {
-    "title": "Arches National Park",
+  "destination7": {
+    "locationName": "Arches National Park",
     "image": "https://travel.usnews.com/dims4/USNEWS/feaa95b/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/451/arches_main_getty_cropped18_445x280.jpg",
     "alt": "Photo of Delicate Arch",
     "description": "Established in 1929, the original Arches National Park didn't even include its most famous 52-foot Delicate Arch. The park continued to expand over time though, and Arches National Park now covers nearly 77,000 acres in eastern Utah. Oddly shaped sandstone monuments riddle every view, and the formations make the park an excellent place for backpackers, rock climbers and hikers, not to mention photographers.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard8": {
-    "title": "Rocky Mountain National Park",
+  "destination8": {
+    "locationName": "Rocky Mountain National Park",
     "image": "https://travel.usnews.com/dims4/USNEWS/3e17da5/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/189/loch_vale_getty_resized_445x280.jpg",
     "alt": "Rockies at sunrise",
     "description": "The Rockies earn plenty of points for their convenience. Sitting just 70 miles north of Denver, the area makes for an easy daytrip. However, you could spend days exploring this park. The Rockies' magnificent landscape is one for the books, featuring 355 miles of scenic trails, around 150 lakes and 77 mountains taller than 12,000 feet. If you're short on time, Emerald Lake Trail is a popular trek that's less than 5 miles round trip and promises spectacular alpine views.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard9": {
-    "title": "Acadia National Park",
+  "destination9": {
+    "locationName": "Acadia National Park",
     "image": "https://travel.usnews.com/dims4/USNEWS/e29c06d/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/158/main-2015-edited_445x280.jpg",
     "alt": "Hiker above tree line in Acadia",
     "description": "Considered the 'crown jewel of the North Atlantic coast,' Acadia National Park boasts nearly 160 miles of hiking trails on Maine's Mount Desert Island. If you're not up for the challenge of hiking Precipice Trail, which forces climbers to scramble up the side of Champlain Mountain, you'll find plenty of less strenuous sightseeing opportunities throughout the park. If you're not much of a hiker, drive along the 27-mile Park Loop Road or take a walk or bike ride along the 57-mile network of Carriage Roads.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard10": {
-    "title": "Bryce Canyon National Park",
+  "destination10": {
+    "locationName": "Bryce Canyon National Park",
     "image": "https://travel.usnews.com/dims4/USNEWS/65e2cae/2147483647/resize/976x652%5E%3E/crop/976x652/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/454/main_getty.jpg",
     "alt": "Hoodoos in Bryce Canyon",
     "description": "Located in southwestern Utah, Bryce Canyon National Park occupies an otherworldly area composed of a dozen amphitheaters, or horseshoe-shaped canyons, on an eroded escarpment of the Paunsaugunt Plateau. The whimsical formations of limestone rock, created by erosion and rain, are entrancing to visitors who love to explore the slot canyons, windows, fins and, most notably, the tall, skinny spires called hoodoos. In fact, Bryce Canyon National Park boasts more hoodoos than any other place in the world.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard11": {
-    "title": "Olympic National Park",
+  "destination11": {
+    "locationName": "Olympic National Park",
     "image": "https://travel.usnews.com/dims4/USNEWS/001a0eb/2147483647/resize/255x255%5E%3E/crop/255x255/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/453/sol_duc_2_getty.jpg",
     "alt": "Waterfall photo",
     "description": "Washington State's Olympic National Park, located on the Olympic Peninsula, offers something for every kind of nature lover, from hikers to stargazers to boaters to photographers. Among its nearly 1 million acres, visitors can explore glacier-capped mountains, trek through old-growth temperate rainforests and marvel at more than 70 miles of wild coastline.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard12": {
-    "title": "Great Smoky Mountains National Park",
+  "destination12": {
+    "locationName": "Great Smoky Mountains National Park",
     "image": "https://travel.usnews.com/dims4/USNEWS/463e40f/2147483647/resize/976x652%5E%3E/crop/976x652/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/442/great_smoky_mountains_main_getty.jpg",
     "alt": "Beautiful view of the SMokies at sunrise",
     "description": "Great Smoky Mountains National Park spans both Tennessee and North Carolina, with the border running through the center of the 522,427-acre tract. The mountains have a long history of human settlers from the prehistoric Paleo Indians to 19th-century European settlers. Today, more than 10 million people visit the park each year – it's one of the few free national parks in America – to enjoy scenic drives to Cades Cove or along the Roaring Fork Motor Trail and outdoor activities like hiking, biking and fishing.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard13": {
-    "title": "Sequoia National Park",
+  "destination13": {
+    "locationName": "Sequoia National Park",
     "image": "https://travel.usnews.com/dims4/USNEWS/08e2dc8/2147483647/resize/255x255%5E%3E/crop/255x255/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/448/sequoia_main_gallery_getty.jpg",
     "alt": "Looking up at a sequoia tree",
     "description": "Home to some of the tallest trees in the world, Sequoia National Park is a humbling place to visit. With the magnificent trees towering hundreds of feet above you, it's easy to feel small in comparison. Located about 80 miles east of Fresno, California, in the southern Sierra Nevada mountain range, the park was established in 1890 as a measure to protect the giant trees from being logged, making it America's second national park.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard14": {
-    "title": "Mount Rainier National Park",
+  "destination14": {
+    "locationName": "Mount Rainier National Park",
     "image": "https://travel.usnews.com/dims4/USNEWS/446ce54/2147483647/resize/255x255%5E%3E/crop/255x255/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/449/black_bear_getty.jpg",
     "alt": "Magnificent brown bear",
     "description": "Mount Rainier National Park was established in 1899, making it the nation's fifth national park. Its dominating feature is, of course, the 14,410-foot-tall active volcano for which it is named. The mountain is the tallest volcano in the Cascade Range and the most glaciated peak in the continental United States, with 25 named glaciers. Every year, thousands of people successfully scale its glaciers to enjoy the contrast of the steaming volcano – which last erupted in 1854 – to the icy rivers along its sides.",
     "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
-  "travelCard15": {
-    "title": "Big Bend National Park",
+  "destination15": {
+    "locationName": "Big Bend National Park",
     "image": "https://travel.usnews.com/dims4/USNEWS/d6ba12b/2147483647/resize/445x280%5E%3E/crop/445x280/quality/85/?url=https://travel.usnews.com/static-travel/images/destinations/460/main_cropped_445x280.jpg",
     "alt": "Beautiful view with the river in the foreground and the mountains in the background",
     "description": "Big Bend National Park is in southwest Texas and includes the entire Chisos mountain range and a large swath of the Chihuahuan Desert. The Ross Maxwell Scenic Drive leads to the ruins of Sam Nail Ranch, now home to desert wildlife. The Santa Elena Canyon, carved by the Rio Grande, features steep limestone cliffs. Langford Hot Springs, near the Mexican border, has pictographs and the foundations of an old bathhouse.",
