@@ -19,4 +19,6 @@ const getDiaryEntries = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-export default { getDiaryEntries };
+const addDiaryEntry = (newDiaryEntry) => axios.post(`${baseUrl}/diaryEntries.json`, newDiaryEntry);
+
+export default { getDiaryEntries, addDiaryEntry };

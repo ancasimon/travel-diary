@@ -1,4 +1,5 @@
 import destinationCard from '../destinationCard/destinationCard';
+import diaryContainer from '../diaryContainer/diaryContainer';
 
 import destinationData from '../../helpers/data/destinationData';
 
@@ -19,8 +20,10 @@ const buildDestinationsContainer = () => {
       domString += '</div>';
       domString += '</div>';
       utils.printToDom('destinationsDiv', domString);
+      $('body').on('click', '.submit-diary-entry-button', diaryContainer.makeNewDiaryCard());
     })
     .catch((error) => console.error('get destinations broke', error));
 };
+
 
 export default { buildDestinationsContainer };
