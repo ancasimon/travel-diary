@@ -3,7 +3,7 @@ import 'firebase/auth';
 import utils from '../../helpers/utils';
 
 const buildHomePage = () => {
-  const domString = '<h1 class="text-center mt-5 pt-5">Previous and Future Destinations</h1>';
+  const domString = '<h1 class="text-center mt-5 pt-5">Welcome to My Travel Diary</h1>';
   utils.printToDom('home-page', domString);
 };
 
