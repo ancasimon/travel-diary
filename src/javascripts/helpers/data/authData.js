@@ -2,6 +2,8 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 import destinationsContainer from '../../components/destinationsContainer/destinationsContainer';
+import diaryContainer from '../../components/diaryContainer/diaryContainer';
+
 
 const loginDiv = $('#login-page');
 const homeDiv = $('#home-page');
@@ -30,6 +32,7 @@ const checkLoginStatus = () => {
       diaryDiv.addClass('hide');
     }
     destinationsContainer.buildDestinationsContainer();
+    diaryContainer.buildDiaryContainer();
   });
 };
 
