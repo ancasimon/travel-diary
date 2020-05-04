@@ -1,6 +1,8 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
+import destinationsContainer from '../../components/destinationsContainer/destinationsContainer';
+
 const loginDiv = $('#login-page');
 const homeDiv = $('#home-page');
 const homeButton = $('#navbar-home-button');
@@ -24,6 +26,7 @@ const checkLoginStatus = () => {
       logoutButton.addClass('hide');
       destinationsDiv.addClass('hide');
     }
+    destinationsContainer.buildDestinationsContainer();
   });
 };
 

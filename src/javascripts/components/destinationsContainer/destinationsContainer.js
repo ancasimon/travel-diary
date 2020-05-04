@@ -7,6 +7,7 @@ import utils from '../../helpers/utils';
 const buildDestinationsContainer = () => {
   destinationData.getDestinations()
     .then((destinations) => {
+      console.error('destinations coming in from the data file', destinations);
       let domString = '';
       domString += '<div class="d-flex flex-wrap">';
       destinations.forEach((item) => {
