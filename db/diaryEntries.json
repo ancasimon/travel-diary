@@ -1,0 +1,32 @@
+{
+  "diaryEntry1": {
+    "destinationId": "destination3",
+    "timestamp": "2006",
+    "notes": "tbd"
+  },
+  "diaryEntry2": {
+    "destinationId": "destination4",
+    "timestamp": "2009",
+    "notes": "tbd"
+  },
+  "diaryEntry3": {
+    "destinationId": "destination9",
+    "timestamp": "2019",
+    "notes": "tbd"
+  },
+  "diaryEntry4": {
+    "destinationId": "destination10",
+    "timestamp": "2010",
+    "notes": "tbd"
+  },
+  "diaryEntry5": {
+    "destinationId": "destination10",
+    "timestamp": "2007",
+    "notes": "tbd"
+  },
+  "diaryEntry6": {
+    "destinationId": "destination14",
+    "timestamp": "2012",
+    "notes": "tbd"
+  }
+}
