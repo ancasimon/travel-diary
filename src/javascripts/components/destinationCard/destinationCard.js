@@ -8,7 +8,7 @@ const buildDestinationCard = (destination) => {
   domString += '<form id="diaryForm">';
   domString += '<div class="form-group">';
   domString += '<label for="diaryEntryNotesInput">Record it for posterity: What did you think about it?</label>';
-  domString += '<textarea class="form-control notes" id="diaryEntryNotesInput" rows="3"></textarea>';
+  domString += '<textarea type="text" class="form-control notes diaryEntryNotesInput" id="diaryEntryNotesInput" rows="3"></textarea>';
   domString += '</div>';
   domString += '</form>';
   domString += `<button data-id=${destination.id} class="btn btn-primary submit-diary-entry-button">Submit</button>`;

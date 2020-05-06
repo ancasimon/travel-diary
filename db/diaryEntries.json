@@ -1,32 +1,32 @@
 {
   "diaryEntry1": {
     "destinationId": "destination3",
-    "timestamp": "2006",
+    "timestamp": "July 20th 06",
     "notes": "Memorable backpacking trip - I still remember going through the Ptarmigan Tunnel and pretty much going from winter on one side to beautiful spring skies on the other! Beautiful lakes, skies, flowers - everything."
   },
   "diaryEntry2": {
     "destinationId": "destination4",
-    "timestamp": "2009",
+    "timestamp": "March 15th 09",
     "notes": "Quick trip in March - Only got to go to the South Rim. Cannot wait to go back and visit the North Rim, too."
   },
   "diaryEntry3": {
     "destinationId": "destination9",
-    "timestamp": "2019",
+    "timestamp": "June 30th 19",
     "notes": "Love the views and colors in Acadia. Being able to get above tree line with such ease makes for beautiful views that even kids can access."
   },
   "diaryEntry4": {
     "destinationId": "destination10",
-    "timestamp": "2010",
+    "timestamp": "November 20th 10",
     "notes": "Otherworldy!"
   },
   "diaryEntry5": {
     "destinationId": "destination12",
-    "timestamp": "2007",
+    "timestamp": "April 20th 07",
     "notes": "During our AT thru-hike in 2007, the Smokies showed us the beautiful (well, sometimes muddy ...) transition from winter to spring in the span of 5 days."
   },
   "diaryEntry6": {
     "destinationId": "destination14",
-    "timestamp": "2012",
+    "timestamp": "July 16th 12",
     "notes": "Got to celebrate a birthday here. Would love to win the lottery to do the Wonderland Trail one year!"
   }
 }

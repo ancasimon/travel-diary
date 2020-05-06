@@ -20,10 +20,12 @@ const buildDestinationsContainer = () => {
       domString += '</div>';
       domString += '</div>';
       utils.printToDom('destinationsDiv', domString);
-      $('body').on('click', '.submit-diary-entry-button', diaryContainer.makeNewDiaryCard());
     })
     .catch((error) => console.error('get destinations broke', error));
 };
 
+const buildDestinationsContainerEvents = () => {
+  $('body').on('click', '#submit-diary-entry-button', diaryContainer.makeNewDiaryCard);
+};
 
-export default { buildDestinationsContainer };
+export default { buildDestinationsContainer, buildDestinationsContainerEvents };

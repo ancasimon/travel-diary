@@ -11,10 +11,12 @@ const makeNewDiaryCard = (e) => {
   e.preventDefault();
   const destinationId = e.target.dataset.id;
   console.error('destination id where we clicked button', destinationId);
+  const notes = $('#diaryEntryNotesInput').val();
+  console.error('notes', notes);
   const newDiaryEntry = {
     destinationId,
-    notes: $('#diaryEntryNotesInput')[0].value,
-    timestamp: moment().format('l'),
+    notes: $('#diaryEntryNotesInput').val(),
+    timestamp: moment().format('MMM Do YY'),
   };
   console.error('new object', newDiaryEntry);
   console.error('input value', ($('#diaryEntryNotesInput').val()));
@@ -30,11 +32,11 @@ const makeNewDiaryCard = (e) => {
 const buildDiaryContainer = () => {
   smashData.getDiaryEntriesWithLocationName()
     .then((diaryEntries) => {
-      const sortedDiaryEntries = diaryEntries.sort((a, b) => a.timestamp - b.timestamp);
+      // const sortedDiaryEntries = diaryEntries.sort((a, b) => a.timestamp - b.timestamp);
       let domString = '';
       domString += '<div class="centeredSection">';
       domString += '<h2>Diary</h2>';
-      sortedDiaryEntries.forEach((item) => {
+      diaryEntries.forEach((item) => {
         domString += '<div class="diaryCard">';
         domString += diaryCard.buildDiaryCard(item);
         domString += '</div>';
