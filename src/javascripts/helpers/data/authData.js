@@ -31,6 +31,7 @@ const checkLoginStatus = () => {
       destinationsDiv.addClass('hide');
       diaryDiv.addClass('hide');
     }
+    destinationsContainer.buildDestinationsContainerEvents();
     destinationsContainer.buildDestinationsContainer();
     diaryContainer.buildDiaryContainer();
   });
