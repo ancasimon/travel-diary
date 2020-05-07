@@ -3,6 +3,7 @@ import 'firebase/auth';
 
 import destinationsContainer from '../../components/destinationsContainer/destinationsContainer';
 import diaryContainer from '../../components/diaryContainer/diaryContainer';
+import destinationModalAdd from '../../components/destinationsContainer/destinationModalAdd';
 
 
 const loginDiv = $('#login-page');
@@ -35,6 +36,7 @@ const checkLoginStatus = () => {
     destinationsContainer.buildDestinationsContainer();
     diaryContainer.buildDiaryContainerEvents();
     diaryContainer.buildDiaryContainer();
+    destinationModalAdd.buildDestinationModalAddForm();
   });
 };
 

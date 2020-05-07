@@ -19,4 +19,6 @@ const getDestinations = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-export default { getDestinations };
+const addDestination = (newDestination) => axios.post(`${baseUrl}/destinations.json`, newDestination);
+
+export default { getDestinations, addDestination };
