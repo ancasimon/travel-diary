@@ -1,32 +1,38 @@
 {
   "diaryEntry1": {
     "destinationId": "destination3",
-    "timestamp": "July 20th 06",
-    "notes": "Memorable backpacking trip - I still remember going through the Ptarmigan Tunnel and pretty much going from winter on one side to beautiful spring skies on the other! Beautiful lakes, skies, flowers - everything."
+    "timestamp": "20/07/2006",
+    "notes": "Memorable backpacking trip - I still remember going through the Ptarmigan Tunnel and pretty much going from winter on one side to beautiful spring skies on the other! Beautiful lakes, skies, flowers - everything.",
+    "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
   "diaryEntry2": {
     "destinationId": "destination4",
-    "timestamp": "March 15th 09",
-    "notes": "Quick trip in March - Only got to go to the South Rim. Cannot wait to go back and visit the North Rim, too."
+    "timestamp": "15/03/2009",
+    "notes": "Quick trip in March - Only got to go to the South Rim. Cannot wait to go back and visit the North Rim, too.",
+    "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
   "diaryEntry3": {
     "destinationId": "destination9",
-    "timestamp": "June 30th 19",
-    "notes": "Love the views and colors in Acadia. Being able to get above tree line with such ease makes for beautiful views that even kids can access."
+    "timestamp": "30/06/2019",
+    "notes": "Love the views and colors in Acadia. Being able to get above tree line with such ease makes for beautiful views that even kids can access.",
+    "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
   "diaryEntry4": {
     "destinationId": "destination10",
-    "timestamp": "November 20th 10",
-    "notes": "Otherworldy!"
+    "timestamp": "20/11/2010",
+    "notes": "Otherworldy!",
+    "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
   "diaryEntry5": {
     "destinationId": "destination12",
-    "timestamp": "April 20th 07",
-    "notes": "During our AT thru-hike in 2007, the Smokies showed us the beautiful (well, sometimes muddy ...) transition from winter to spring in the span of 5 days."
+    "timestamp": "20/04/2007",
+    "notes": "During our AT thru-hike in 2007, the Smokies showed us the beautiful (well, sometimes muddy ...) transition from winter to spring in the span of 5 days.",
+    "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   },
   "diaryEntry6": {
     "destinationId": "destination14",
-    "timestamp": "July 16th 12",
-    "notes": "Got to celebrate a birthday here. Would love to win the lottery to do the Wonderland Trail one year!"
+    "timestamp": "16/07/2012",
+    "notes": "Got to celebrate a birthday here. Would love to win the lottery to do the Wonderland Trail one year!",
+    "uid": "TiupNPeZfTbuzCZNxr8gx0gC6Fe2"
   }
 }

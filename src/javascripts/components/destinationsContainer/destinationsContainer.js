@@ -25,7 +25,7 @@ const buildDestinationsContainer = () => {
 };
 
 const buildDestinationsContainerEvents = () => {
-  $('body').on('click', '#submit-diary-entry-button', diaryContainer.makeNewDiaryCard);
+  $('body').on('click', '.submit-diary-entry-button', diaryContainer.makeNewDiaryCard);
 };
 
 export default { buildDestinationsContainer, buildDestinationsContainerEvents };

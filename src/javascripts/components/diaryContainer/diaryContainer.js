@@ -1,5 +1,4 @@
-import moment from 'moment';
-
+import firebase from 'firebase/app';
 import diaryData from '../../helpers/data/diaryData';
 import smashData from '../../helpers/data/smashData';
 
@@ -15,8 +14,9 @@ const makeNewDiaryCard = (e) => {
   console.error('notes', notes);
   const newDiaryEntry = {
     destinationId,
-    notes: $('#diaryEntryNotesInput').val(),
-    timestamp: moment().format('MMM Do YY'),
+    notes: $('.notes').val(),
+    timestamp: new Date().toLocaleDateString('en-GB'),
+    uid: firebase.auth().currentUser.uid,
   };
   console.error('new object', newDiaryEntry);
   console.error('input value', ($('#diaryEntryNotesInput').val()));
@@ -32,11 +32,11 @@ const makeNewDiaryCard = (e) => {
 const buildDiaryContainer = () => {
   smashData.getDiaryEntriesWithLocationName()
     .then((diaryEntries) => {
-      // const sortedDiaryEntries = diaryEntries.sort((a, b) => a.timestamp - b.timestamp);
+      const sortedDiaryEntries = diaryEntries.sort((a, b) => a.dateTimestamp - b.dateTimestamp);
       let domString = '';
       domString += '<div class="centeredSection">';
       domString += '<h2>Diary</h2>';
-      diaryEntries.forEach((item) => {
+      sortedDiaryEntries.forEach((item) => {
         domString += '<div class="diaryCard">';
         domString += diaryCard.buildDiaryCard(item);
         domString += '</div>';

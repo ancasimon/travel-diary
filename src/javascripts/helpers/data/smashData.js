@@ -15,6 +15,10 @@ const getDiaryEntriesWithLocationName = () => new Promise((resolve, reject) => {
           // NOTE: Then we copy the location name from any destinations whose ids are on a diary entry into that copy of that diary entry.
           diaryEntryCopy.locationName = selectedDestination.locationName;
           // NOTE: Lastly we push that copy of the diary entry into a final array and then resolve the array.
+          // Now we also want to update the timestamp so we cna sort by it!
+          const dateString = diaryEntry.timestamp.split('/').reverse().toString();
+          const dateTimestamp = Date.parse(dateString);
+          diaryEntryCopy.dateTimestamp = dateTimestamp;
           finalDiaryEntries.push(diaryEntryCopy);
 
           resolve(finalDiaryEntries);
