@@ -1,8 +1,23 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import './colors';
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 body {
-  background-color: #d5daa9;
+  background: radial-gradient(circle, $color5, $color2);
+  // padding-top: 70px;
+}
+
+h1, h2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: $color1;
+  font-weight: bolder;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.navMenuItem {
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .hide {
