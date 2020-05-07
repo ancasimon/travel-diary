@@ -33,6 +33,7 @@ const checkLoginStatus = () => {
     }
     destinationsContainer.buildDestinationsContainerEvents();
     destinationsContainer.buildDestinationsContainer();
+    diaryContainer.buildDiaryContainerEvents();
     diaryContainer.buildDiaryContainer();
   });
 };
