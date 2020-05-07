@@ -21,4 +21,6 @@ const getDiaryEntries = () => new Promise((resolve, reject) => {
 
 const addDiaryEntry = (newDiaryEntry) => axios.post(`${baseUrl}/diaryEntries.json`, newDiaryEntry);
 
-export default { getDiaryEntries, addDiaryEntry };
+const deleteDiaryEntry = (diaryEntryId) => axios.delete(`${baseUrl}/diaryEntries/${diaryEntryId}.json`);
+
+export default { getDiaryEntries, addDiaryEntry, deleteDiaryEntry };

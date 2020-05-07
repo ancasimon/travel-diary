@@ -29,6 +29,17 @@ const makeNewDiaryCard = (e) => {
     .catch((error) => console.error('could not add a new diary entry', error));
 };
 
+const removeDiaryEntry = (e) => {
+  const diaryEntryId = e.target.closest('button').dataset.id;
+  console.error('diary card id', diaryEntryId);
+  diaryData.deleteDiaryEntry(diaryEntryId)
+    .then(() => {
+      // eslint-disable-next-line no-use-before-define
+      buildDiaryContainer();
+    })
+    .catch((error) => console.error('could not delete diary entry', error));
+};
+
 const buildDiaryContainer = () => {
   smashData.getDiaryEntriesWithLocationName()
     .then((diaryEntries) => {
@@ -47,4 +58,8 @@ const buildDiaryContainer = () => {
     .catch((error) => console.error('get diary entries broke', error));
 };
 
-export default { buildDiaryContainer, makeNewDiaryCard };
+const buildDiaryContainerEvents = () => {
+  $('body').on('click', '#btnDeleteDiaryEntry', removeDiaryEntry);
+};
+
+export default { buildDiaryContainer, makeNewDiaryCard, buildDiaryContainerEvents };
