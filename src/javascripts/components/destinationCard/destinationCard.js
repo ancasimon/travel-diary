@@ -1,6 +1,6 @@
 const buildDestinationCard = (destination) => {
   let domString = '';
-  domString += '<div class="card">';
+  domString += '<div class="card destinationCard">';
   domString += `<img src="${destination.image}" class="card-img-top" alt="${destination.alt}">`;
   domString += '<div class="card-body">';
   domString += `<h5 id-"destination-location" class="card-title">${destination.locationName}</h5>`;

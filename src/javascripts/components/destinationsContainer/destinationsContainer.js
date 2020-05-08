@@ -5,6 +5,7 @@ import diaryContainer from '../diaryContainer/diaryContainer';
 import destinationData from '../../helpers/data/destinationData';
 
 import utils from '../../helpers/utils';
+import smashData from '../../helpers/data/smashData';
 
 const makeNewDestination = (e) => {
   console.error('button clicked');
@@ -29,7 +30,7 @@ const makeNewDestination = (e) => {
 
 const buildDestinationsContainer = () => {
   destinationData.getDestinations()
-    .then((destinations) => {
+    .then(() => {
       let domString = '';
       domString += '<div class="centeredSection">';
       domString += '<div class="d-flex flex-wrap">';
@@ -37,11 +38,19 @@ const buildDestinationsContainer = () => {
       domString += '<button type="button" class="btn btn-lg ml-auto iconLarge" data-toggle="modal" data-target="#modalAddDestination"><i class="fas fa-plus-square"></i></button>';
       domString += '</div>';
       domString += '<div class="d-flex flex-wrap">';
-      destinations.forEach((item) => {
-        domString += '<div class="col-md-4">';
-        domString += destinationCard.buildDestinationCard(item);
-        domString += '</div>';
-      });
+      smashData.getDestinationsWithDiaryEntries()
+        .then((destinationsArray) => {
+          destinationsArray.forEach((item) => {
+            console.error('dest array', destinationsArray);
+            domString += '<div class="col-md-4 visitedDestination">';
+            domString += destinationCard.buildDestinationCard(item);
+            domString += '</div>';
+          });
+        });
+      // })
+      // destinations.forEach((item) => {
+
+      // });
       domString += '</div>';
       domString += '</div>';
       utils.printToDom('destinationsDiv', domString);

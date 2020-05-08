@@ -46,4 +46,22 @@ const getSingleDiaryEntryWithLocationName = (diaryEntryId) => new Promise((resol
     .catch((error) => reject(error));
 });
 
-export default { getDiaryEntriesWithLocationName, getSingleDiaryEntryWithLocationName };
+const getDestinationsWithDiaryEntries = () => new Promise((resolve, reject) => {
+  destinationData.getDestinations()
+    .then((destinationResponse) => {
+      diaryData.getDiaryEntries().then((diaryResponse) => {
+        console.error('dest respo', destinationResponse);
+        console.error('diary respo', diaryResponse);
+        const finalDestinations = [];
+        diaryResponse.forEach((diary) => {
+          const selectedDestination = destinationResponse.find((x) => x.id === diary.destinationId);
+          finalDestinations.push(selectedDestination);
+          resolve(finalDestinations);
+          console.error('final dest', finalDestinations);
+        });
+      });
+    })
+    .catch((error) => reject(error));
+});
+
+export default { getDiaryEntriesWithLocationName, getSingleDiaryEntryWithLocationName, getDestinationsWithDiaryEntries };
