@@ -28,4 +28,22 @@ const getDiaryEntriesWithLocationName = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-export default { getDiaryEntriesWithLocationName };
+const getSingleDiaryEntryWithLocationName = (diaryEntryId) => new Promise((resolve, reject) => {
+  diaryData.getSingleDiaryEntry(diaryEntryId)
+    .then((diaryResponse) => {
+      destinationData.getDestinations().then((destinationResponse) => {
+        console.error('diaryResp', diaryResponse);
+        const diaryEntryCopy = { ...diaryResponse.data };
+        diaryEntryCopy.id = diaryEntryId;
+        console.error('dest resp', destinationResponse);
+        const selectedDestination = destinationResponse.find((x) => x.id === diaryEntryCopy.destinationId);
+        console.error('dest Id in responses', selectedDestination);
+        diaryEntryCopy.locationName = selectedDestination.locationName;
+        resolve(diaryEntryCopy);
+        console.error('diary copy', diaryEntryCopy);
+      });
+    })
+    .catch((error) => reject(error));
+});
+
+export default { getDiaryEntriesWithLocationName, getSingleDiaryEntryWithLocationName };

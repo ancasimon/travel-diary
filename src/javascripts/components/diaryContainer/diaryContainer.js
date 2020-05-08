@@ -5,6 +5,7 @@ import smashData from '../../helpers/data/smashData';
 import diaryCard from '../diaryCard/diaryCard';
 
 import utils from '../../helpers/utils';
+import diaryEntryModalEdit from './diaryEntryModalEdit';
 
 const makeNewDiaryCard = (e) => {
   e.preventDefault();
@@ -40,6 +41,29 @@ const removeDiaryEntry = (e) => {
     .catch((error) => console.error('could not delete diary entry', error));
 };
 
+const editDiaryEntryEvent = (e) => {
+  e.preventDefault();
+  const diaryEntryId = e.target.closest('button').dataset.id;
+  console.error('diary entry id on edit call', diaryEntryId);
+  $('#modalEditDiaryEntry').modal('show');
+  diaryEntryModalEdit.buildDiaryEntryModalEditForm(diaryEntryId);
+};
+
+const updateDiaryEntry = (e) => {
+  e.preventDefault();
+  const diaryEntryId = $('#formEditDiaryEntry').data('id');
+  console.error('diary id in update function', diaryEntryId);
+  const editedNotes = $('#formDiaryNotes').val();
+  console.error('edited notes', editedNotes);
+  diaryData.updateDiaryEntry(diaryEntryId, editedNotes)
+    .then(() => {
+      $('#modalEditDiaryEntry').modal('hide');
+      // eslint-disable-next-line no-use-before-define
+      buildDiaryContainer();
+    })
+    .catch((error) => console.error('could not update diary entry', error));
+};
+
 const buildDiaryContainer = () => {
   smashData.getDiaryEntriesWithLocationName()
     .then((diaryEntries) => {
@@ -60,6 +84,8 @@ const buildDiaryContainer = () => {
 
 const buildDiaryContainerEvents = () => {
   $('body').on('click', '#btnDeleteDiaryEntry', removeDiaryEntry);
+  $('body').on('click', '#btnEditDiaryEntry', editDiaryEntryEvent);
+  $('body').on('click', '#btnSaveEditedDiaryEntry', updateDiaryEntry);
 };
 
 export default { buildDiaryContainer, makeNewDiaryCard, buildDiaryContainerEvents };
