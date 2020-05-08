@@ -23,4 +23,14 @@ const addDiaryEntry = (newDiaryEntry) => axios.post(`${baseUrl}/diaryEntries.jso
 
 const deleteDiaryEntry = (diaryEntryId) => axios.delete(`${baseUrl}/diaryEntries/${diaryEntryId}.json`);
 
-export default { getDiaryEntries, addDiaryEntry, deleteDiaryEntry };
+const updateDiaryEntry = (diaryEntryId, editedNotes) => axios.patch(`${baseUrl}/diaryEntries/${diaryEntryId}.json`, { notes: editedNotes });
+
+const getSingleDiaryEntry = (diaryEntryId) => axios.get(`${baseUrl}/diaryEntries/${diaryEntryId}.json`);
+
+export default {
+  getDiaryEntries,
+  addDiaryEntry,
+  deleteDiaryEntry,
+  updateDiaryEntry,
+  getSingleDiaryEntry,
+};
