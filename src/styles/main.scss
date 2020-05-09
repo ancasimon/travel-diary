@@ -8,7 +8,7 @@ body {
   // padding-top: 70px;
 }
 
-h1, h2 {
+h2 {
   font-family: 'Nanum Gothic', sans-serif;
   color: $color1;
   font-weight: bolder;
@@ -16,8 +16,18 @@ h1, h2 {
   padding-bottom: 10px;
 }
 
+h1 {
+  color: $color4;
+  z-index: 100;
+}
+
+.navMenu {
+  background-color: $color1;
+}
+
 .navMenuItem {
   font-family: 'Nanum Gothic', sans-serif;
+  color: $color4;
 }
 
 .destinationCard {
@@ -56,3 +66,9 @@ h1, h2 {
   color: $color1;
   font-style: italic;
 }
+
+.question {
+  font-style: italic;
+  font-weight: bolder;
+}
+
