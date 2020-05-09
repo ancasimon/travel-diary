@@ -5,6 +5,7 @@ import diaryContainer from '../diaryContainer/diaryContainer';
 import destinationData from '../../helpers/data/destinationData';
 
 import utils from '../../helpers/utils';
+import smashData from '../../helpers/data/smashData';
 
 const makeNewDestination = (e) => {
   console.error('button clicked');
@@ -28,7 +29,7 @@ const makeNewDestination = (e) => {
 };
 
 const buildDestinationsContainer = () => {
-  destinationData.getDestinations()
+  smashData.getDestinationsWithDiaryEntries()
     .then((destinations) => {
       let domString = '';
       domString += '<div class="centeredSection">';
@@ -39,10 +40,12 @@ const buildDestinationsContainer = () => {
       domString += '<div class="d-flex flex-wrap">';
       destinations.forEach((item) => {
         domString += '<div class="col-md-4">';
+        console.error('dest in foreach loop', item);
         domString += destinationCard.buildDestinationCard(item);
         domString += '</div>';
       });
       domString += '</div>';
+      domString += '<p class="legend">*Legend: Dark background means I made it! Light background means it\'s still on my wishlist...</p>';
       domString += '</div>';
       utils.printToDom('destinationsDiv', domString);
     })

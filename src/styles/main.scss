@@ -20,6 +20,10 @@ h1, h2 {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+.destinationCard {
+  margin: 10px;
+}
+
 .hide {
   display: none;
 }
@@ -36,4 +40,19 @@ h1, h2 {
 
 .iconLarge {
   font-size: 2em;;
+}
+
+.unvisitedDestination {
+  background-color: $color1;
+  color: $color5;
+}
+
+.visitedDestination {
+  background-color: $color5;
+  color: $color1;
+}
+
+.legend {
+  color: $color1;
+  font-style: italic;
 }
