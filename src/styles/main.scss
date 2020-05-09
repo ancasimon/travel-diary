@@ -8,20 +8,32 @@ body {
   // padding-top: 70px;
 }
 
-h1, h2 {
+h2 {
   font-family: 'Nanum Gothic', sans-serif;
   color: $color1;
   font-weight: bolder;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 10px;
+}
+
+h1 {
+  color: $color4;
+  z-index: 100;
+}
+
+.navMenu {
+  background-color: $color1;
 }
 
 .navMenuItem {
   font-family: 'Nanum Gothic', sans-serif;
+  color: $color4;
 }
 
 .destinationCard {
-  margin: 10px;
+  justify-content: center;
+  padding: 30px;
+  margin: 30px;
 }
 
 .hide {
@@ -56,3 +68,69 @@ h1, h2 {
   color: $color1;
   font-style: italic;
 }
+
+.question {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.parkCard {
+  color: $color1;
+  background-color: $color3;
+}
+
+.parkName {
+  padding: 20px;
+}
+
+.parkForm {
+  margin-top: 20px;
+}
+
+// FLIP CARD CSS BELOW
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  // width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  // background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: $color3;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+// END FLIP CARD CSS

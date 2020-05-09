@@ -1,6 +1,5 @@
 import firebase from 'firebase/app';
 import destinationCard from '../destinationCard/destinationCard';
-import diaryContainer from '../diaryContainer/diaryContainer';
 
 import destinationData from '../../helpers/data/destinationData';
 
@@ -53,7 +52,6 @@ const buildDestinationsContainer = () => {
 };
 
 const buildDestinationsContainerEvents = () => {
-  $('body').on('click', '.submit-diary-entry-button', diaryContainer.makeNewDiaryCard);
   $('body').on('click', '#btnSaveNewDestination', makeNewDestination);
 };
 
