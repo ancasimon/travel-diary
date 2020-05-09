@@ -1,6 +1,10 @@
 const buildDestinationCard = (destination) => {
   let domString = '';
-  domString += '<div class="card destinationCard">';
+  if (destination.visited === true) {
+    domString += '<div class="card destinationCard visitedDestination">';
+  } else {
+    domString += '<div class="card destinationCard unvisitedDestination">';
+  }
   domString += `<img src="${destination.image}" class="card-img-top" alt="${destination.alt}">`;
   domString += '<div class="card-body">';
   domString += `<h5 id-"destination-location" class="card-title">${destination.locationName}</h5>`;

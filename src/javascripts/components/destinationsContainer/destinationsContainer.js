@@ -29,8 +29,8 @@ const makeNewDestination = (e) => {
 };
 
 const buildDestinationsContainer = () => {
-  destinationData.getDestinations()
-    .then(() => {
+  smashData.getDestinationsWithDiaryEntries()
+    .then((destinations) => {
       let domString = '';
       domString += '<div class="centeredSection">';
       domString += '<div class="d-flex flex-wrap">';
@@ -38,20 +38,14 @@ const buildDestinationsContainer = () => {
       domString += '<button type="button" class="btn btn-lg ml-auto iconLarge" data-toggle="modal" data-target="#modalAddDestination"><i class="fas fa-plus-square"></i></button>';
       domString += '</div>';
       domString += '<div class="d-flex flex-wrap">';
-      smashData.getDestinationsWithDiaryEntries()
-        .then((destinationsArray) => {
-          destinationsArray.forEach((item) => {
-            console.error('dest array', destinationsArray);
-            domString += '<div class="col-md-4 visitedDestination">';
-            domString += destinationCard.buildDestinationCard(item);
-            domString += '</div>';
-          });
-        });
-      // })
-      // destinations.forEach((item) => {
-
-      // });
+      destinations.forEach((item) => {
+        domString += '<div class="col-md-4">';
+        console.error('dest in foreach loop', item);
+        domString += destinationCard.buildDestinationCard(item);
+        domString += '</div>';
+      });
       domString += '</div>';
+      domString += '<p class="legend">*Legend: Dark background means I made it! Light background means it\'s still on my wishlist...</p>';
       domString += '</div>';
       utils.printToDom('destinationsDiv', domString);
     })
