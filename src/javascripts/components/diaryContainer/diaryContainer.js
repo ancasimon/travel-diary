@@ -6,24 +6,24 @@ import diaryCard from '../diaryCard/diaryCard';
 
 import utils from '../../helpers/utils';
 import diaryEntryModalEdit from './diaryEntryModalEdit';
+import destinationsContainer from '../destinationsContainer/destinationsContainer';
 
 const makeNewDiaryCard = (e) => {
   e.preventDefault();
   const destinationId = e.target.dataset.id;
-  console.error('destination id where we clicked button', destinationId);
-  const notes = $('#diaryEntryNotesInput').val();
+  const notes = e.target.previousSibling.previousSibling.firstChild.nextSibling.lastElementChild.value;
+  // const notes = e.target.previousSibling.firstChild.lastChild.value;
   console.error('notes', notes);
   const newDiaryEntry = {
     destinationId,
-    notes: $('.notes').val(),
+    notes,
     timestamp: new Date().toLocaleDateString('en-GB'),
     uid: firebase.auth().currentUser.uid,
   };
-  console.error('new object', newDiaryEntry);
-  console.error('input value', ($('#diaryEntryNotesInput').val()));
   diaryData.addDiaryEntry(newDiaryEntry)
     .then(() => {
-      document.getElementById('diaryForm').reset();
+      // $('.diaryEntryNotesInput').val('');
+      destinationsContainer.buildDestinationsContainer();
       // eslint-disable-next-line no-use-before-define
       buildDiaryContainer();
     })
@@ -32,7 +32,6 @@ const makeNewDiaryCard = (e) => {
 
 const removeDiaryEntry = (e) => {
   const diaryEntryId = e.target.closest('button').dataset.id;
-  console.error('diary card id', diaryEntryId);
   diaryData.deleteDiaryEntry(diaryEntryId)
     .then(() => {
       // eslint-disable-next-line no-use-before-define
@@ -44,7 +43,6 @@ const removeDiaryEntry = (e) => {
 const editDiaryEntryEvent = (e) => {
   e.preventDefault();
   const diaryEntryId = e.target.closest('button').dataset.id;
-  console.error('diary entry id on edit call', diaryEntryId);
   $('#modalEditDiaryEntry').modal('show');
   diaryEntryModalEdit.buildDiaryEntryModalEditForm(diaryEntryId);
 };
@@ -52,9 +50,7 @@ const editDiaryEntryEvent = (e) => {
 const updateDiaryEntry = (e) => {
   e.preventDefault();
   const diaryEntryId = $('#formEditDiaryEntry').data('id');
-  console.error('diary id in update function', diaryEntryId);
   const editedNotes = $('#formDiaryNotes').val();
-  console.error('edited notes', editedNotes);
   diaryData.updateDiaryEntry(diaryEntryId, editedNotes)
     .then(() => {
       $('#modalEditDiaryEntry').modal('hide');
@@ -83,6 +79,7 @@ const buildDiaryContainer = () => {
 };
 
 const buildDiaryContainerEvents = () => {
+  $('body').on('click', '.submit-diary-entry-button', makeNewDiaryCard);
   $('body').on('click', '#btnDeleteDiaryEntry', removeDiaryEntry);
   $('body').on('click', '#btnEditDiaryEntry', editDiaryEntryEvent);
   $('body').on('click', '#btnSaveEditedDiaryEntry', updateDiaryEntry);
