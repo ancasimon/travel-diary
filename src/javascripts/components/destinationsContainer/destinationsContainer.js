@@ -7,7 +7,6 @@ import utils from '../../helpers/utils';
 import smashData from '../../helpers/data/smashData';
 
 const makeNewDestination = (e) => {
-  console.error('button clicked');
   e.preventDefault();
   const newDestination = {
     locationName: $('#formAddLocationName').val(),
@@ -16,7 +15,6 @@ const makeNewDestination = (e) => {
     description: $('#formAddLocationDescription').val(),
     uid: firebase.auth().currentUser.uid,
   };
-  console.error('new object', newDestination);
   destinationData.addDestination(newDestination)
     .then(() => {
       $('#formAddDestination input').val('');
@@ -39,7 +37,6 @@ const buildDestinationsContainer = () => {
       domString += '<div class="d-flex flex-wrap">';
       destinations.forEach((item) => {
         domString += '<div class="col-md-4">';
-        console.error('dest in foreach loop', item);
         domString += destinationCard.buildDestinationCard(item);
         domString += '</div>';
       });

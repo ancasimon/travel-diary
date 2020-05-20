@@ -1,6 +1,5 @@
 const buildDiaryCard = (item) => {
   let domString = '';
-  console.error('item for diary card', item);
   domString += `<div id="${item.id}" class="card mb-3">`;
   domString += '<div class="row no-gutters">';
   domString += '<div class="card-body">';

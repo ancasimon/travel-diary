@@ -6,7 +6,6 @@ const buildDiaryEntryModalEditForm = (diaryEntryCopyId) => {
   smashData.getSingleDiaryEntryWithLocationName(diaryEntryCopyId)
     .then((response) => {
       const diaryEntryCopy = response;
-      console.error('respo data in build diary edit form', diaryEntryCopy);
       let domString = '';
       domString += `<form id="formEditDiaryEntry" data-id=${diaryEntryCopy.id}>`;
       console.error('diary id in edit form', diaryEntryCopy.id);
