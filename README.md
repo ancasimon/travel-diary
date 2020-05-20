@@ -6,7 +6,7 @@ The Travel Diary app was a bonus project I tackled during our spring break. It i
 ## Background
 This project was a great opportunity to keep practicing my skills manipulating data across multiple collections in a Firebase database. It helped me improve my ability to outline the logic and code for what we at NSS call "smash" functions, that is, functions that pull data from multiple collections; it also helped me get even more comfortable with various CSS components such as Bootstrap modals and Javascript elements, such as .parse() methods and the spread operator. 
 
-This project also gave me the opportunity to ouline some of the destinations truly on my own bucket list - which would be all of the US national parks. I have been fortunate enough to visit a few of them. Hopefully, I can slowly work my way through the very lengthy and amazing list of national parks we are so fortunate to have access to here in the US.
+This project also gave me the opportunity to outline some of the destinations truly on my own bucket list - which would be all of the US national parks. I have been fortunate enough to visit a few of them. Hopefully, I can slowly work my way through the very lengthy and amazing list of national parks we are so fortunate to have access to here in the US.
 
 Project instructions can be found here: https://github.com/nss-nightclass-projects/exercise-vault/blob/master/MODULES_travel_diary.md.
 
