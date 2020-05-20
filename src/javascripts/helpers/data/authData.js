@@ -12,6 +12,8 @@ const homeButton = $('#navbar-home-button');
 const logoutButton = $('#navbar-logout-button');
 const destinationsDiv = $('#destinationsDiv');
 const diaryDiv = $('#diaryDiv');
+const destinationsDivMenu = $('#navbar-destinations-button');
+const diaryDivMenu = $('#navbar-diary-button');
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
@@ -21,7 +23,9 @@ const checkLoginStatus = () => {
       homeDiv.removeClass('hide');
       homeButton.removeClass('hide');
       logoutButton.removeClass('hide');
+      destinationsDivMenu.removeClass('hide');
       destinationsDiv.removeClass('hide');
+      diaryDivMenu.removeClass('hide');
       diaryDiv.removeClass('hide');
     } else {
       // person is not logged in
@@ -29,7 +33,9 @@ const checkLoginStatus = () => {
       homeDiv.addClass('hide');
       homeButton.addClass('hide');
       logoutButton.addClass('hide');
+      destinationsDivMenu.addClass('hide');
       destinationsDiv.addClass('hide');
+      diaryDivMenu.addClass('hide');
       diaryDiv.addClass('hide');
     }
     destinationsContainer.buildDestinationsContainerEvents();

@@ -12,8 +12,6 @@ const makeNewDiaryCard = (e) => {
   e.preventDefault();
   const destinationId = e.target.dataset.id;
   const notes = e.target.previousSibling.previousSibling.firstChild.nextSibling.lastElementChild.value;
-  // const notes = e.target.previousSibling.firstChild.lastChild.value;
-  console.error('notes', notes);
   const newDiaryEntry = {
     destinationId,
     notes,
@@ -22,7 +20,6 @@ const makeNewDiaryCard = (e) => {
   };
   diaryData.addDiaryEntry(newDiaryEntry)
     .then(() => {
-      // $('.diaryEntryNotesInput').val('');
       destinationsContainer.buildDestinationsContainer();
       // eslint-disable-next-line no-use-before-define
       buildDiaryContainer();
