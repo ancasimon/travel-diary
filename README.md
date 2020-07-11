@@ -1,4 +1,5 @@
 # Travel Diary
+[Check it out here!](https://traveldiary-78295.web.app/#)
 
 ## Description
 The Travel Diary app was a bonus project I tackled during our spring break. It is an online journal that allows users to keep track of destinations on their bucket list and then capture diary entries when they actually get to visit these sites. 
