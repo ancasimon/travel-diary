@@ -42,7 +42,7 @@ Project instructions can be found here: https://github.com/nss-nightclass-projec
 1. Users can delete diary entries.
 1. Users can edit their diary entries.
 
-## Technologies & Tools
+## Tools & Technologies 
 Axios API, Bootstrap, CSS, ES6 Modules, ESLint, Firebase (for authentication & data management), Github (for version control & project planning), Google login authentication via Firebase, HTML5, Javascript, jQuery, JSON, JSONLint, Lucidchart (for ERD review), Sass, Webpack
 
 ## How to Run
